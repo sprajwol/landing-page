@@ -78,11 +78,12 @@ main{
 
 .intro{
   background-color: #ffffff;
-  padding: 15vh 0;
+  /* padding: 15vh 0; */
+  padding: 15vh 0 30vh 0
 }
 
 .intro-content{
-  height: 50vh;
+  /* height: 50vh; */
   display: flex;
   flex-wrap: wrap;
 }
@@ -99,7 +100,7 @@ main{
 
 .services{
   background-color: #f1c11a;
-  height: 50vh;
+  /* height: 50vh; */
   clip-path: polygon(0 0, 15% 0, 50% 20%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
   margin-top: -15vh;
 }
@@ -123,7 +124,8 @@ main{
 
 .contact{
   background-color: #ffffff;
-  padding: 10vh 0;
+  /* padding: 10vh 0; */
+  padding: 15vh 0 30vh 0;
   text-align: center;
 }
 
@@ -151,20 +153,21 @@ input[type='text'], input[type=email], textarea{
 footer{
   background-color: #f1c11a;
   clip-path: polygon(0 0, 15% 0, 50% 20%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
-  margin-top: -10vh;
+  /* margin-top: -10vh; */
+  margin-top: -15vh;
   text-align: center;
   padding-top: 15vh;
   padding-bottom: 30px;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .header-content h2{
     font-size: 20px;
   }
 
   .intro-content{
     display: block;
-    height: 90vh;
+    /* height: 90vh; */
   }
 
   .intro-content div{
@@ -172,18 +175,74 @@ footer{
   }
 
   .services{
-    height: 100vh;
+    /* height: 100vh; */
     clip-path: polygon(0 0, 15% 0, 50% 5%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
   }
 
   .service-content{
     display: block;
-    margin-top: -15vh;
+    /* margin-top: -15vh; */
     padding-top: 1px;
+    padding-bottom: 1px;
   }
 
   .bucket{
     width: 100%;
-    margin: 80px 3%;
+    /* margin: 80px 3%; */
+    margin: 80px 0 80px 0
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .services {
+    margin-top: -20vh;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .services {
+    margin-top: -22vh;
+  }
+}
+
+
+@media screen and (max-width: 426px) {
+  .header-content{
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-content h1, .intro-content h1, .contact-section h1 {
+    font-size: 2em;
+  }
+
+  .header-content h2 {
+    padding: 50px 0;
+  }
+
+  .header-content h2 span:nth-child(1) {
+    line-height: 0;
+  }
+
+  .header-content h2 span:nth-child(2) {
+    line-height: 50px;
+  }
+
+  .btn {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .btn-trans, .btn-fill {
+    width: 30%;
+    line-height: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .btn-trans, .btn-fill {
+    width: 35%;
   }
 }
